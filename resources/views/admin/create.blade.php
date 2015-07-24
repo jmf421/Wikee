@@ -54,9 +54,9 @@
                         </div>
 
                     <div class="form-group">
-                        <div class="col-md-3 col-md-offset-1">
+                        <div class="col-md-2 col-md-offset-1">
 
-                        {!! Form::submit('Add Article', ['class' => 'btn btn-sm btn-primary form-control']) !!}
+                        {!! Form::submit('Publish', ['class' => 'btn btn-sm btn-primary form-control']) !!}
 
                         </div>
 
