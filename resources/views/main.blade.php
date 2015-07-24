@@ -84,18 +84,18 @@
                                 <a href="javascript:void(0)" class="site-nav-sub"><i class="fa fa-angle-down site-nav-arrow"></i>Spaces</a>
                                 <ul>
                                     <li>
-                                        <a href="/accounting">Accounting</a>
+                                        <a href="#">Accounting</a>
                                     </li>
                                     <li>
-                                        <a href="/marketing">Marketing</a>
+                                        <a href="#">Marketing</a>
                                     </li>
                                     <li>
-                                        <a href="/sales">Sales</a>
+                                        <a href="#">Sales</a>
                                     </li>
                                 </ul>
                             </li>
                             <li>
-                                <a href="/support">Support</a>
+                                <a href="#">Support</a>
                             </li>
                             <li>
                                 <a href="/contact">Contact</a>
@@ -109,7 +109,7 @@
                                             <a href="/admin/dashboard">My Account</a>
                                         </li>
                                         <li>
-                                            <a href="/settings">Settings</a>
+                                            <a href="#">Settings</a>
                                         </li>
                                         <li>
                                             <a href="/auth/logout">Log Out</a>
