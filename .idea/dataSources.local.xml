@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="MySQL - playground@localhost" uuid="d59a431c-d782-4a8e-b8ae-a805b95812fc">
+      <secret-storage>master_key</secret-storage>
+      <first-sync>true</first-sync>
+      <user-name>playground</user-name>
+    </data-source>
+  </component>
+</project>
+
