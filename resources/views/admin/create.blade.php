@@ -17,7 +17,15 @@
         <li><a href="">Create</a></li>
     </ul>
     <!-- END Forms General Header -->
-
+    @if (count($errors) > 0)
+        <div class="alert alert-danger">
+            <ul>
+                @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+    @endif
     <div class="row">
         <div class="col-md-12">
             <!-- Basic Form Elements Block -->
