@@ -14,12 +14,10 @@ Route::get('pricing', 'PagesController@pricing');
 
 Route::get('articles', 'ArticlesController@index');
 
-Route::get('admin/create', 'UserController@create');
-
 Route::get('articles/{id}', 'ArticlesController@show');
 
 
-
+Route::controller('admin/create', 'UserController');
 
 
 Route::controllers([

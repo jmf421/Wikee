@@ -1,9 +1,11 @@
 <?php namespace App\Http\Controllers;
 
+use App\Article;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
+use Illuminate\Validation\Validator;
 
 class UserController extends Controller {
 
@@ -29,9 +31,23 @@ class UserController extends Controller {
         return view ('admin.dashboard');
     }
 
-    public function create() {
+    public function getIndex() {
 
         return view ('admin.create');
+    }
+
+    public function postIndex(Request $request) {
+        $article = new Article();
+
+        $this->validate($request, [
+            'title' => 'required',
+            'body'  => 'required'
+        ]);
+
+        $article->fill($request->all());
+        $article->save();
+
+        return redirect('admin/create');
     }
 
 }
