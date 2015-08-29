@@ -136,13 +136,21 @@
                             <a href="/admin/dashboard" class=" active"><i class="gi gi-stopwatch sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">Dashboard</span></a>
                         </li>
                         <li>
-                            <a href="#" class="sidebar-nav-menu"><i class="fa fa-angle-left sidebar-nav-indicator sidebar-nav-mini-hide"></i><i class="gi gi-shopping_cart sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">Article</span></a>
+                            <a href="#" class="sidebar-nav-menu"><i class="fa fa-angle-left sidebar-nav-indicator sidebar-nav-mini-hide"></i><i class="gi gi-notes_2 sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">Article</span></a>
                             <ul>
                                 <li>
                                     <a href="/admin/create">Add New</a>
                                 </li>
                                 <li>
                                     <a href="page_ecom_orders.html">View My Articles</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="sidebar-nav-menu"><i class="fa fa-angle-left sidebar-nav-indicator sidebar-nav-mini-hide"></i><i class="gi gi-show_big_thumbnails sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">Spaces</span></a>
+                            <ul>
+                                <li>
+                                    <a href="#">Add New</a>
                                 </li>
                             </ul>
                         </li>
