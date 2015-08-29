@@ -8,7 +8,7 @@
     <div class="content-header">
         <div class="header-section">
             <h1>
-                <i class="gi gi-notes_2"></i>Form General Elements<br><small>Clean and professional forms for your UI!</small>
+                <i class="gi gi-notes_2"></i>New Article<br><small>Create a new Wikee article!</small>
             </h1>
         </div>
     </div>
@@ -32,16 +32,13 @@
             <div class="block">
                 <!-- Basic Form Elements Title -->
                 <div class="block-title">
-                    <div class="block-options pull-right">
-                        <a href="javascript:void(0)" class="btn btn-alt btn-sm btn-default toggle-bordered enable-tooltip" data-toggle="button" title="Toggles .form-bordered class">No Borders</a>
-                    </div>
-                    <h2><strong>Create A New Article</strong> </h2>
+                    <h2><strong>New Article</strong> </h2>
                 </div>
                 <!-- END Form Elements Title -->
 
                 <!-- Basic Form Elements Content -->
 
-                    {!! Form::open(array('class'=>'form-horizontal form-bordered')) !!}
+                    {!! Form::open(array('class'=>'form-horizontal')) !!}
                         <div class="form-group">
                             <div class="col-md-1">
                             {!! Form::label('title', 'Title:', ['class' => 'pull-right']) !!}
