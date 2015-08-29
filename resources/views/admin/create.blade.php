@@ -1,7 +1,7 @@
 @extends('admin.main')
 
 @section('content')
-
+    <script src="//cdn.ckeditor.com/4.5.3/standard/ckeditor.js"></script>
         <!-- Page content -->
 <div id="page-content">
     <!-- Forms General Header -->
@@ -40,26 +40,39 @@
 
                     {!! Form::open(array('class'=>'form-horizontal')) !!}
                         <div class="form-group">
-                            <div class="col-md-1">
+                            <div class="col-md-2">
                             {!! Form::label('title', 'Title:', ['class' => 'pull-right']) !!}
                             </div>
-                            <div class="col-md-8 pull-left">
+                            <div class="col-md-9 pull-left">
                             {!! Form::text('title', null, ['class' => 'form-control']) !!}
                              </div>
                         </div>
 
                         <div class="form-group">
-                            <div class="col-md-1">
+                            <div class="col-md-2">
                                 {!! Form::label('body', 'Body:',['class' => 'pull-right']) !!}
                             </div>
-                            <div class="col-md-8 pull-left">
+                            <div class="col-md-9 pull-left">
                                 {!! Form::textarea('body', null, ['class' => 'form-control']) !!}
+                                <script>
+                                    // Replace the <textarea id="body"> with a CKEditor
+                                    // instance, using default configuration.
+                                    CKEDITOR.replace( 'body' );
+                                </script>
                             </div>
 
                         </div>
+                        <div class="form-group">
+                            <div class="col-md-2">
+                                {!! Form::label('published_at', 'Publish Date:',['class' => 'pull-right']) !!}
+                            </div>
+                            <div class="col-md-3 pull-left">
+                                {!! Form::input('date', 'published_at', Carbon\Carbon::now()->format('Y-m-d'), ['class' => 'form-control']) !!}
+                            </div>
+                        </div>
 
                     <div class="form-group">
-                        <div class="col-md-2 col-md-offset-1">
+                        <div class="col-md-2 col-md-offset-2">
 
                         {!! Form::submit('Publish', ['class' => 'btn btn-sm btn-primary form-control']) !!}
 
@@ -78,5 +91,4 @@
 <!-- END Page Content -->
 
 
-
-    @stop
+@stop
