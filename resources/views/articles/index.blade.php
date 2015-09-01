@@ -43,9 +43,10 @@
                 <div class="row">
                     <div class="col-sm-6">
                         <!-- Tutorials -->
-                        @foreach ($articles as $article)
+
                         <h3 class="push-bit"><i class="fa fa-pencil"></i> <strong>Testing</strong></h3>
                         <ul class="fa-ul ul-breath push">
+                            @foreach ($articles as $article)
                             <li>
                                 <i class="fa fa-file-text-o fa-li"></i> <a href="/articles/{{ $article->id }}">{{ $article->title }}</a>
                                 <p class="text-muted"><small>6 days ago by <strong>Bobby Miller</strong></small></p>

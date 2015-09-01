@@ -9,7 +9,7 @@
                         <h2 class="text-center animation-slideUp push hidden-xs">Bring your project to life with WiKee!</h2>
                     </div>
                     <div class="site-block text-center">
-                        <a href="/signup" class="btn btn-lg btn-success"><i class="fa fa-newspaper-o"></i> Get Started Now!</a>
+                        <a href="/auth/register" class="btn btn-lg btn-success"><i class="fa fa-newspaper-o"></i> Get Started Now!</a>
 
                     </div>
                 </section>
